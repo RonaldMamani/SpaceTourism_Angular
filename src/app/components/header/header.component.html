@@ -1,1 +1,17 @@
-<header class="text-5xl text-blue-700">Sou Header</header>
+<header class="
+    px-6 py-6 flex justify-between items-center
+    md:px-9
+    lg:p-16-
+    ">
+    <img src="../../../assets/shared/logo.svg" alt="">
+    <app-nav-mobile />
+    <div class="
+        max-[767px]:hidden flex justify-between gap-5 text-white/85 text-xl font-extralight font-['BarlowCondensed'] bg-[#ffffff0a] backdrop-blur-2xl
+        md:px-12 md:py-10 md:gap-8
+        ">
+        <button routerLink="" class="uppercase" [ngClass]="{'border-b-white border-b-2' : currentPath == '/', '' : currentPath != '/' }">Home</button>
+        <button routerLink="/destination" class="uppercase">Destination</button>
+        <button routerLink="/crew" class="uppercase">Crew</button>
+        <button routerLink="/technology" class="uppercase">Technology</button>
+    </div>
+</header>

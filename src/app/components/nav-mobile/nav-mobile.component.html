@@ -1,0 +1,9 @@
+<nav class="
+    md:hidden
+    ">
+    @if (Open) {
+        <img (click)="Open = false" src="../../../assets/shared/icon-close.svg" alt="">
+    }@else {
+        <img (click)="Open = true" src="../../../assets/shared/icon-hamburger.svg" alt="">
+    }
+</nav>
