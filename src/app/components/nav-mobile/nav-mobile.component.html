@@ -1,9 +1,20 @@
 <nav class="
+    absolute top-0 right-0
     md:hidden
     ">
-    @if (Open) {
-        <img (click)="Open = false" src="../../../assets/shared/icon-close.svg" alt="">
+    @if (!Open) {
+        <img (click)="Open = true" class="px-6 py-9" src="../../../assets/shared/icon-hamburger.svg" alt="">
     }@else {
-        <img (click)="Open = true" src="../../../assets/shared/icon-hamburger.svg" alt="">
+        <div class="
+            bg-[#ffffff0a] backdrop-blur-2xl w-[65vw] h-screen relative
+            ">
+            <img (click)="Open = false" class="absolute right-0 px-6 py-9" src="../../../assets/shared/icon-close.svg" alt="">
+            <div class="px-8 py-28 flex flex-col gap-8">
+                <app-link href="/" number="00" content="Home" />
+                <app-link href="/destination" number="01" content="Destination" />
+                <app-link href="/crew" number="02" content="Crew" />
+                <app-link href="/technology" number="03" content="Technology" />
+            </div>
+        </div>
     }
 </nav>
