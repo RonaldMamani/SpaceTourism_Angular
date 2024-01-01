@@ -12,9 +12,11 @@ import { Router, RouterLink } from '@angular/router';
 export class NavPlanetsComponent {
   currentPath: string = ''
 
+  
   constructor(private router: Router) {
     this.router.events.subscribe(() => {
       this.currentPath = this.router.url;
+      console.log('Current Path',this.currentPath)
     });
   }
 }

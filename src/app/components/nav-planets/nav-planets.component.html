@@ -1,7 +1,7 @@
 <nav class="flex justify-center items-center gap-7">
     <button
         routerLink="/destination/"
-        [ngClass]="{'text-white border-b-white border-b-2 ' : currentPath == '', 'text-[#D0D6F9]/60' : currentPath != ''}"
+        [ngClass]="{'text-white border-b-white border-b-2 ' : currentPath === '/destination' || currentPath === '', 'text-[#D0D6F9]/60' : currentPath !== '/destination'}"
         class="
             pb-2 font-['Borlow Condensed tracking-[2.4px]'] uppercase
         ">
@@ -10,7 +10,7 @@
     </button>
     <button
         routerLink="/destination/mars"
-        [ngClass]="{'text-white border-b-white border-b-2 ' : currentPath == '/mars', 'text-[#D0D6F9]/60' : currentPath != '/mars'}"
+        [ngClass]="{'text-white border-b-white border-b-2 ' : currentPath === '/destination/mars', 'text-[#D0D6F9]/60' : currentPath !== '/destination/mars'}"
         class="
         pb-2 font-['Borlow Condensed tracking-[2.4px]'] uppercase
         ">
@@ -18,7 +18,7 @@
     </button>
     <button
         routerLink="/destination/europa"
-        [ngClass]="{'text-white border-b-white border-b-2 ' : currentPath == '/europa', 'text-[#D0D6F9]/60' : currentPath != '/europa'}"
+        [ngClass]="{'text-white border-b-white border-b-2 ' : currentPath === '/destination/europa', 'text-[#D0D6F9]/60' : currentPath !== 'destination/europa'}"
         class="
         pb-2 font-['Borlow Condensed tracking-[2.4px]'] uppercase
         ">
@@ -26,7 +26,7 @@
     </button>
     <button
         routerLink="/destination/titan"
-        [ngClass]="{'text-white border-b-white border-b-2 ' : currentPath == '/titan', 'text-[#D0D6F9]/60' : currentPath != '/titan'}"
+        [ngClass]="{'text-white border-b-white border-b-2 ' : currentPath === '/destination/titan', 'text-[#D0D6F9]/60' : currentPath !== '/destination/titan'}"
         class="
         pb-2 font-['Borlow Condensed tracking-[2.4px]'] uppercase
         ">

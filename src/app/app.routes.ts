@@ -7,6 +7,10 @@ import { MoonComponent } from './pages/moon/moon.component';
 import { MarsComponent } from './pages/mars/mars.component';
 import { EuropaComponent } from './pages/europa/europa.component';
 import { TitanComponent } from './pages/titan/titan.component';
+import { CommanderComponent } from './pages/crew/commander/commander.component';
+import { SpecialistComponent } from './pages/crew/specialist/specialist.component';
+import { PilotComponent } from './pages/crew/pilot/pilot.component';
+import { EngineerComponent } from './pages/crew/engineer/engineer.component';
 
 export const routes: Routes = [
     { 
@@ -34,6 +38,27 @@ export const routes: Routes = [
             }
         ]
     },
-    { path: 'crew', component: CrewComponent},
+    { 
+        path: 'crew', 
+        component: CrewComponent,
+        children: [
+            {
+                path: '',
+                component: CommanderComponent
+            },
+            {
+                path: 'specialist',
+                component: SpecialistComponent
+            },
+            {
+                path: 'pilot',
+                component: PilotComponent
+            },
+            {
+                path: 'engineer',
+                component: EngineerComponent
+            }
+        ]
+    },
     { path: 'technology', component: TechnologyComponent}
 ];
