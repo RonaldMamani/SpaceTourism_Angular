@@ -1,0 +1,35 @@
+<nav class="flex justify-center items-center gap-7">
+    <button
+        routerLink="/destination/"
+        [ngClass]="{'text-white border-b-white border-b-2 ' : currentPath == '', 'text-[#D0D6F9]/60' : currentPath != ''}"
+        class="
+            pb-2 font-['Borlow Condensed tracking-[2.4px]'] uppercase
+        ">
+        
+        Moon
+    </button>
+    <button
+        routerLink="/destination/mars"
+        [ngClass]="{'text-white border-b-white border-b-2 ' : currentPath == '/mars', 'text-[#D0D6F9]/60' : currentPath != '/mars'}"
+        class="
+        pb-2 font-['Borlow Condensed tracking-[2.4px]'] uppercase
+        ">
+        Mars
+    </button>
+    <button
+        routerLink="/destination/europa"
+        [ngClass]="{'text-white border-b-white border-b-2 ' : currentPath == '/europa', 'text-[#D0D6F9]/60' : currentPath != '/europa'}"
+        class="
+        pb-2 font-['Borlow Condensed tracking-[2.4px]'] uppercase
+        ">
+        Europa
+    </button>
+    <button
+        routerLink="/destination/titan"
+        [ngClass]="{'text-white border-b-white border-b-2 ' : currentPath == '/titan', 'text-[#D0D6F9]/60' : currentPath != '/titan'}"
+        class="
+        pb-2 font-['Borlow Condensed tracking-[2.4px]'] uppercase
+        ">
+        Titan
+    </button>
+</nav>
