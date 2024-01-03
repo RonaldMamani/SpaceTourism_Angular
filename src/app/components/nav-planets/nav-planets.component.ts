@@ -10,13 +10,12 @@ import { Router, RouterLink } from '@angular/router';
   styleUrl: './nav-planets.component.scss'
 })
 export class NavPlanetsComponent {
-  currentPath: string = ''
+  currentPath: string = '/destination'
 
   
   constructor(private router: Router) {
     this.router.events.subscribe(() => {
       this.currentPath = this.router.url;
-      console.log('Current Path',this.currentPath)
     });
   }
 }
