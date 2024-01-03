@@ -4,7 +4,60 @@
     lg:bg-[url('./assets/technology/background-technology-desktop.jpg')]
     ">
     <app-header />
-    <div class="pt-4 px-6">
+    <div class="">
         <app-title-page number="03" title="SPACE LAUNCH 101" />
+        <div class="py-8 flex flex-col gap-8">
+            <div>
+                @if (launch) {
+                    <div class="
+                        bg-[url('./assets/technology/image-launch-vehicle-landscape.jpg')] bg-cover bg-top h-[175px]
+                        "></div>
+                }
+                @if (spaceport) {
+                    <div class="
+                        bg-[url('./assets/technology/image-spaceport-landscape.jpg')] bg-cover bg-top h-[175px]
+                    "></div>
+                }
+                @if (capsule) {
+                    <div class="
+                        bg-[url('./assets/technology/image-space-capsule-landscape.jpg')] bg-cover bg-top h-[175px]
+                    "></div>
+                }
+            </div>
+            <div>
+                <app-nav-tech 
+                    [launch]="launch"
+                    [spaceport]="spaceport"
+                    [capsule]="capsule"
+                    (showLaunchEvent)="showLaunch()"
+                    (showSpacePortEvent)="showSpacePort()"
+                    (showCapsuleEvent)="showCapsule()"
+                />
+                @if (launch) {
+                    <app-tech-info 
+                        Name="LAUNCH VEHICLE"
+                        Descrition="A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface 
+                        to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres 
+                        tall, it's quite an awe-inspiring sight on the launch pad!"
+                    />
+                }
+                @if (spaceport) {
+                    <app-tech-info 
+                        Name="SPACEPORT"
+                        Descrition="A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for 
+                        ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of 
+                        the Earth’s rotation for launch."
+                    />
+                }
+                @if (capsule) {
+                    <app-tech-info 
+                        Name="SPACE CAPSULE"
+                        Descrition="A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's 
+                        atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, 
+                        and plenty of other activities to keep you entertained."
+                    />
+                }
+            </div>
+        </div>
     </div>
 </section>

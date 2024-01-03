@@ -1,0 +1,20 @@
+<nav class="flex justify-center gap-4">
+    <button 
+        [ngClass]="{'bg-white text-[#0B0D17]' : launch, 'text-white' : !launch}"
+        (click)="showLaunch()"
+        class="w-[40px] h-[40px] rounded-full border-white/20 border text-center">
+        <span class="font-['Bellefair'] tracking-[1px]">1</span>
+    </button>
+    <button 
+        [ngClass]="{'bg-white text-[#0B0D17]' : spaceport, 'text-white' : !spaceport}"
+        (click)="showSpacePort()"
+        class="w-[40px] h-[40px] rounded-full border-white/20 border text-center">
+        <span class="font-['Bellefair'] tracking-[1px]">2</span>
+    </button>
+    <button
+        [ngClass]="{'bg-white text-[#0B0D17]' : capsule, 'text-white' : !capsule}"
+        (click)="showCapsule()"
+        class="w-[40px] h-[40px] rounded-full border-white/20 border text-center">
+        <span class="font-['Bellefair'] tracking-[1px]">3</span>
+    </button>
+</nav>
