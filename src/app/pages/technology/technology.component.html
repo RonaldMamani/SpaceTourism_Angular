@@ -4,27 +4,39 @@
     lg:bg-[url('./assets/technology/background-technology-desktop.jpg')]
     ">
     <app-header />
-    <div class="">
-        <app-title-page number="03" title="SPACE LAUNCH 101" />
-        <div class="py-8 flex flex-col gap-8">
+    <div class="md:pt-16">
+        <div class="md:px-10">
+            <app-title-page number="03" title="SPACE LAUNCH 101" />
+        </div>
+        <div class="
+            py-8 flex flex-col gap-8
+            md:py-16 md:gap-14
+            ">
             <div>
                 @if (launch) {
                     <div class="
                         bg-[url('./assets/technology/image-launch-vehicle-landscape.jpg')] bg-cover bg-top h-[175px]
+                        md:bg-bottom md:h-[300px]
+                        lg:bg-[url('./assets/technology/image-launch-vehicle-portrait.jpg')]
                         "></div>
                 }
                 @if (spaceport) {
                     <div class="
                         bg-[url('./assets/technology/image-spaceport-landscape.jpg')] bg-cover bg-top h-[175px]
+                        md:bg-bottom md:h-[300px]
                     "></div>
                 }
                 @if (capsule) {
                     <div class="
                         bg-[url('./assets/technology/image-space-capsule-landscape.jpg')] bg-cover bg-top h-[175px]
+                        md:bg-bottom md:h-[300px]
                     "></div>
                 }
             </div>
-            <div class="px-7 flex flex-col gap-7">
+            <div class="
+                px-7 flex flex-col gap-7
+                md:gap-14
+                ">
                 <app-nav-tech 
                     [launch]="launch"
                     [spaceport]="spaceport"
@@ -34,7 +46,7 @@
                     (showCapsuleEvent)="showCapsule()"
                 />
                 @if (launch) {
-                    <app-tech-info 
+                    <app-tech-info class="md:px-[7.7rem]"
                         Name="LAUNCH VEHICLE"
                         Descrition="A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface 
                         to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres 
@@ -42,7 +54,7 @@
                     />
                 }
                 @if (spaceport) {
-                    <app-tech-info 
+                    <app-tech-info class="md:px-[7.5rem]"
                         Name="SPACEPORT"
                         Descrition="A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for 
                         ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of 
@@ -50,7 +62,7 @@
                     />
                 }
                 @if (capsule) {
-                    <app-tech-info 
+                    <app-tech-info class="md:px-32"
                         Name="SPACE CAPSULE"
                         Descrition="A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's 
                         atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, 
