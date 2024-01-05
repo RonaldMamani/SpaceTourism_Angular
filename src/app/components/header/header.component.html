@@ -15,9 +15,21 @@
         max-[767px]:hidden flex justify-between gap-5 text-white/85 font-extralight font-['BarlowCondensed'] bg-[#ffffff0a] backdrop-blur-2xl
         md:px-12 md:gap-8
         ">
-        <button routerLink="/" class="uppercase py-10" [ngClass]="{'border-b-white border-b-2' : currentPath == '/', '' : currentPath != '/' }">Home</button>
-        <button routerLink="/destination" class="uppercase py-10" [ngClass]="{'border-b-white border-b-2' : currentPath == '/destination' || currentPath == '/destination/mars' || currentPath == '/destination/europa' || currentPath == '/destination/titan', '' : currentPath != '/destination' }">Destination</button>
-        <button routerLink="/crew" class="uppercase py-10" [ngClass]="{'border-b-white border-b-2' : currentPath == '/crew', '' : currentPath != '/crew' }">Crew</button>
-        <button routerLink="/technology" class="uppercase py-10" [ngClass]="{'border-b-white border-b-2' : currentPath == '/technology', '' : currentPath != '/technology' }">Technology</button>
+        <button 
+            routerLink="/" 
+            class="uppercase py-10" 
+            [ngClass]="{'border-b-white border-b-2' : currentPath == '/', '' : currentPath != '/' }">Home</button>
+        <button 
+            routerLink="/destination" 
+            class="uppercase py-10" 
+            [ngClass]="{'border-b-white border-b-2' : currentPath == '/destination' || currentPath == '/destination/mars' || currentPath == '/destination/europa' || currentPath == '/destination/titan', '' : currentPath != '/destination' }">Destination</button>
+        <button 
+            routerLink="/crew" 
+            class="uppercase py-10" 
+            [ngClass]="{'border-b-white border-b-2' : currentPath == '/crew' || currentPath == '/crew/specialist' || currentPath == '/crew/pilot' || currentPath == '/crew/engineer', '' : currentPath != '/crew' }">Crew</button>
+        <button 
+            routerLink="/technology" 
+            class="uppercase py-10" 
+            [ngClass]="{'border-b-white border-b-2' : currentPath == '/technology', '' : currentPath != '/technology' }">Technology</button>
     </div>
 </header>
