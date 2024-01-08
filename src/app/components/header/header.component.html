@@ -1,35 +1,63 @@
 <header class="
     flex justify-between items-center relative
     md:px-0
-    lg:p-16
     ">
     <img 
         routerLink="/" 
         class="
             px-6 py-6
             md:px-10
+            lg:py-16 lg:px-14
             " 
-        src="../../../assets/shared/logo.svg" alt="">
+        src="../../../assets/shared/logo.svg" 
+        alt="Logo do Space Tourism">
     <app-nav-mobile />
+    <div class="max-[1023px]:hidden absolute left-40 border-t-white/20 border-t w-[650px] z-30"></div>
     <div class="
-        max-[767px]:hidden flex justify-between gap-5 text-white/85 font-extralight font-['BarlowCondensed'] bg-[#ffffff0a] backdrop-blur-2xl
+        max-[767px]:hidden flex justify-between gap-5 text-white/85 font-extralight font-['Barlow Condensed'] bg-[#ffffff0a] backdrop-blur-2xl
         md:px-12 md:gap-8
+        lg:px-32 lg:gap-14 lg:text-lg
+        xl:px-40
         ">
         <button 
             routerLink="/" 
-            class="uppercase py-10" 
-            [ngClass]="{'border-b-white border-b-2' : currentPath == '/', '' : currentPath != '/' }">Home</button>
+            class="
+                flex gap-3 uppercase py-10
+                hover:border-b-2 hover:border-white hover:text-white transition-all
+                " 
+            [ngClass]="{'border-b-white border-b-2' : currentPath == '/', '' : currentPath != '/' }">
+            <span class="max-[1023px]:hidden font-bold text-white">00</span>
+            <span>Home</span>
+        </button>
         <button 
             routerLink="/destination" 
-            class="uppercase py-10" 
-            [ngClass]="{'border-b-white border-b-2' : currentPath == '/destination' || currentPath == '/destination/mars' || currentPath == '/destination/europa' || currentPath == '/destination/titan', '' : currentPath != '/destination' }">Destination</button>
+            class="
+                flex gap-3 uppercase py-10
+                hover:border-b-2 hover:border-white hover:text-white transition-all
+                " 
+            [ngClass]="{'border-b-white border-b-2' : currentPath == '/destination' || currentPath == '/destination/mars' || currentPath == '/destination/europa' || currentPath == '/destination/titan', '' : currentPath != '/destination' }">
+            <span class="max-[1023px]:hidden font-bold text-white">01</span>
+            <span>Destination</span>
+        </button>
         <button 
             routerLink="/crew" 
-            class="uppercase py-10" 
-            [ngClass]="{'border-b-white border-b-2' : currentPath == '/crew' || currentPath == '/crew/specialist' || currentPath == '/crew/pilot' || currentPath == '/crew/engineer', '' : currentPath != '/crew' }">Crew</button>
+            class="
+                flex gap-3 uppercase py-10
+                hover:border-b-2 hover:border-white hover:text-white transition-all
+                " 
+            [ngClass]="{'border-b-white border-b-2' : currentPath == '/crew' || currentPath == '/crew/specialist' || currentPath == '/crew/pilot' || currentPath == '/crew/engineer', '' : currentPath != '/crew' }">
+            <span class="max-[1023px]:hidden font-bold text-white">02</span>
+            <span>Crew</span>
+        </button>
         <button 
             routerLink="/technology" 
-            class="uppercase py-10" 
-            [ngClass]="{'border-b-white border-b-2' : currentPath == '/technology', '' : currentPath != '/technology' }">Technology</button>
+            class="
+                flex gap-3 uppercase py-10
+                hover:border-b-2 hover:border-white hover:text-white transition-all
+                " 
+            [ngClass]="{'border-b-white border-b-2' : currentPath == '/technology', '' : currentPath != '/technology' }">
+            <span class="max-[1023px]:hidden font-bold text-white">03</span>
+            <span>Technology</span>
+        </button>
     </div>
 </header>
