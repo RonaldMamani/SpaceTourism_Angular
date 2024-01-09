@@ -1,12 +1,14 @@
 <nav class="
     flex justify-center items-center gap-7
     md:gap-9
+    lg:justify-start lg:gap-9
     ">
     <button
         routerLink="/destination/"
         [ngClass]="{'text-white border-b-white border-b-2 ' : currentPath === '/destination', 'text-[#D0D6F9]/60' : currentPath !== '/destination'}"
         class="
             pb-2 font-['Borlow Condensed tracking-[2.4px]'] uppercase
+            hover:text-white transition-colors
         ">
         
         Moon
@@ -15,7 +17,8 @@
         routerLink="/destination/mars"
         [ngClass]="{'text-white border-b-white border-b-2 ' : currentPath === '/destination/mars', 'text-[#D0D6F9]/60' : currentPath !== '/destination/mars'}"
         class="
-        pb-2 font-['Borlow Condensed tracking-[2.4px]'] uppercase
+            pb-2 font-['Borlow Condensed tracking-[2.4px]'] uppercase
+            hover:text-white transition-colors
         ">
         Mars
     </button>
@@ -23,7 +26,8 @@
         routerLink="/destination/europa"
         [ngClass]="{'text-white border-b-white border-b-2 ' : currentPath === '/destination/europa', 'text-[#D0D6F9]/60' : currentPath !== 'destination/europa'}"
         class="
-        pb-2 font-['Borlow Condensed tracking-[2.4px]'] uppercase
+            pb-2 font-['Borlow Condensed tracking-[2.4px]'] uppercase
+            hover:text-white transition-colors
         ">
         Europa
     </button>
@@ -31,7 +35,8 @@
         routerLink="/destination/titan"
         [ngClass]="{'text-white border-b-white border-b-2 ' : currentPath === '/destination/titan', 'text-[#D0D6F9]/60' : currentPath !== '/destination/titan'}"
         class="
-        pb-2 font-['Borlow Condensed tracking-[2.4px]'] uppercase
+            pb-2 font-['Borlow Condensed tracking-[2.4px]'] uppercase
+            hover:text-white transition-colors
         ">
         Titan
     </button>
