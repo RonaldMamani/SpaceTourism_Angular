@@ -3,14 +3,15 @@ import { HomeComponent } from './pages/home/home.component';
 import { DestinationComponent } from './pages/destination/destination.component';
 import { CrewComponent } from './pages/crew/crew.component';
 import { TechnologyComponent } from './pages/technology/technology.component';
-import { MoonComponent } from './pages/moon/moon.component';
-import { MarsComponent } from './pages/mars/mars.component';
-import { EuropaComponent } from './pages/europa/europa.component';
-import { TitanComponent } from './pages/titan/titan.component';
+
 import { CommanderComponent } from './pages/crew/commander/commander.component';
 import { SpecialistComponent } from './pages/crew/specialist/specialist.component';
 import { PilotComponent } from './pages/crew/pilot/pilot.component';
 import { EngineerComponent } from './pages/crew/engineer/engineer.component';
+import { MoonComponent } from './pages/destination/moon/moon.component';
+import { MarsComponent } from './pages/destination/mars/mars.component';
+import { EuropaComponent } from './pages/destination/europa/europa.component';
+import { TitanComponent } from './pages/destination/titan/titan.component';
 
 export const routes: Routes = [
     { 
