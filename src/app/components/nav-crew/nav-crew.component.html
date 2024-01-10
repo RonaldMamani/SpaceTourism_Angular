@@ -1,22 +1,41 @@
-<nav class="flex justify-center gap-5">
+<nav class="
+    flex justify-center gap-5
+    lg:justify-start lg:gap-6
+    ">
     <button
         routerLink="/crew"
         [ngClass]="{'bg-[#fff] ' : path === '/crew' , 'bg-[#fff]/20' : path !== '/crew'}"
-        class="w-[10px] h-[10px] rounded-full">
+        class="
+            w-[10px] h-[10px] rounded-full
+            hover:bg-white/70 transition-colors
+            lg:w-[15px] lg:h-[15px]
+            ">
     </button>
     <button
         routerLink="/crew/specialist"
         [ngClass]="{'bg-white' : path === '/crew/specialist', 'bg-white/20' : path !== '/crew/specialist' }"
-        class="w-[10px] h-[10px] rounded-full">
+        class="
+            w-[10px] h-[10px] rounded-full
+            hover:bg-white/70 transition-colors
+            lg:w-[15px] lg:h-[15px]
+            ">
     </button>
     <button
         routerLink="/crew/pilot"
         [ngClass]="{'bg-white' : path === '/crew/pilot', 'bg-white/20' : path !== '/crew/pilot' }"
-        class="w-[10px] h-[10px] rounded-full">
+        class="
+            w-[10px] h-[10px] rounded-full
+            hover:bg-white/70 transition-colors
+            lg:w-[15px] lg:h-[15px]
+            ">
     </button>
     <button
         routerLink="/crew/engineer"
         [ngClass]="{'bg-white' : path === '/crew/engineer', 'bg-white/20' : path !== '/crew/engineer' }"
-        class="w-[10px] h-[10px] rounded-full">
+        class="
+            w-[10px] h-[10px] rounded-full
+            hover:bg-white/70 transition-colors
+            lg:w-[15px] lg:h-[15px]
+            ">
     </button>
 </nav>

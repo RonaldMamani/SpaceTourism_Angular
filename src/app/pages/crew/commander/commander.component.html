@@ -1,12 +1,17 @@
 <section class="
     py-8 flex flex-col gap-8
     md:py-0 md:pt-16 md:flex-col-reverse md:gap-10
+    lg:grid lg:grid-cols-2 lg:py-0 lg:pt-36
     ">
-    <div class="flex justify-center">
+    <div class="
+        flex justify-center
+        lg:absolute lg:right-40 lg:top-5
+        ">
         <img 
             class="
                 w-[180px] h-[250px]
                 md:w-[350px] md:h-[500px]
+                lg:w-[500px] lg:h-[700px]
                 " 
             src="../../../../assets/crew/image-douglas-hurley.webp" 
             alt="Imagem do Comandante Douglas Hurley">
@@ -14,6 +19,7 @@
     <div class="
         flex flex-col gap-8
         md:flex-col-reverse md:px-24
+        lg:px-0 lg:pr-28 lg:gap-[120px]
         ">
         <app-nav-crew />
         <app-person-info 
@@ -23,4 +29,5 @@
             launched into space for the third time as commander of Crew Dragon Demo-2."
         />
     </div>
+    <div class="max-[1023px]:hidden "></div>
 </section>

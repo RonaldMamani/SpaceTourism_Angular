@@ -2,11 +2,13 @@
     bg-[url('./assets/crew/background-crew-mobile.jpg')] bg-cover min-h-screen
     md:bg-[url('./assets/crew/background-crew-tablet.jpg')]
     lg:bg-[url('./assets/crew/background-crew-desktop.jpg')]
+    lg:relative
     ">
     <app-header />
     <div class="
         pt-4 px-6 relative
         md:pt-10 md:px-10
+        lg:pt-[76px] lg:px-40
         ">
         <app-title-page number="02" title="Meet your crew" />
         <router-outlet></router-outlet>
