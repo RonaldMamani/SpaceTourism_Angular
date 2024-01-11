@@ -1,28 +1,34 @@
-<nav class="flex justify-center gap-4">
+<nav class="
+    flex justify-center gap-4
+    lg:flex-col lg:gap-8
+    ">
     <button 
-        [ngClass]="{'bg-white text-[#0B0D17]' : launch, 'text-white' : !launch}"
+        [ngClass]="{'bg-white text-[#0B0D17]' : launch, 'text-white hover:bg-white/75 hover:text-[#0B0D17]' : !launch}"
         (click)="showLaunch()"
         class="
-            w-[45px] h-[45px] rounded-full border-white/20 border-2 text-center
+            w-[45px] h-[45px] rounded-full border-white/20 border-2 text-center transition-colors
             md:w-[60px] md:h-[60px] md:text-2xl
+            lg:w-[80px] lg:h-[80px] lg:text-[32px]
             ">
         <span class="font-['Bellefair'] tracking-[1px]">1</span>
     </button>
     <button 
-        [ngClass]="{'bg-white text-[#0B0D17]' : spaceport, 'text-white' : !spaceport}"
+        [ngClass]="{'bg-white text-[#0B0D17]' : spaceport, 'text-white hover:bg-white/75 hover:text-[#0B0D17]' : !spaceport}"
         (click)="showSpacePort()"
         class="
-            w-[45px] h-[45px] rounded-full border-white/20 border-2 text-center
+            w-[45px] h-[45px] rounded-full border-white/20 border-2 text-center transition-colors
             md:w-[60px] md:h-[60px] md:text-2xl
+            lg:w-[80px] lg:h-[80px] lg:text-[32px]
             ">
         <span class="font-['Bellefair'] tracking-[1px]">2</span>
     </button>
     <button
-        [ngClass]="{'bg-white text-[#0B0D17]' : capsule, 'text-white' : !capsule}"
+        [ngClass]="{'bg-white text-[#0B0D17]' : capsule, 'text-white hover:bg-white/75 hover:text-[#0B0D17]' : !capsule}"
         (click)="showCapsule()"
         class="
-            w-[45px] h-[45px] rounded-full border-white/20 border-2 text-center
+            w-[45px] h-[45px] rounded-full border-white/20 border-2 text-center transition-colors
             md:w-[60px] md:h-[60px] md:text-2xl
+            lg:w-[80px] lg:h-[80px] lg:text-[32px]
             ">
         <span class="font-['Bellefair'] tracking-[1px]">3</span>
     </button>
