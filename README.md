@@ -1,27 +1,44 @@
-# SpaceTourism
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.8.
+# Space Tourism
 
-## Development server
+Este projeto do Space Tourism é um site de Turismo Espacial, o site tem diversas paginas sobre esse tipo de Proposta de Turismo, o site é desenvolvido em Angular com Typescript com estilização do TailwindCSS.
+## Fotos
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+![Space Tourism](https://res.cloudinary.com/dz209s6jk/image/upload/v1634565177/Challenges/wudjsbv8g93aarlhvbud.jpg)
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Instalação
 
-## Build
+Clone o repositorio e faça a
+Instalação das dependencias do projeto
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```bash
+  git clone https://github.com/RonaldMamani/SpaceTourism_Angular.git
+```
 
-## Running unit tests
+Rodar o Codigo do Projeto
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```
+    cd SpaceTourism_Angular
+    ng serve
+```
+    
+## Deploy
 
-## Running end-to-end tests
+O Projeto está em hospedagem na Vercel o link esta abaixo:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Link: https://space-tourism-angular-sigma.vercel.app/
+## Stack utilizada
 
-## Further help
+**Front-end:** Angular, Typescript, Router, TailwindCSS
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+## Aprendizados
+
+O projeto do Space Tourism é um projeto feito com Angular 17 utilizando o Router para navegação de paginas dentro do site, o projeto foi desenvolvido com Typescript e utilizando props do Angular e estilização condicional com TailwindCSS, o projeto foi bastante importante para a fixação de conhecimentos com Angular e com Router.
+## Autores
+
+- [RonaldMamani](https://github.com/RonaldMamani)
+
+
